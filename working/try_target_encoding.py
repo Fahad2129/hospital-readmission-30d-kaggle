@@ -9,7 +9,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 
 ROOT=Path(__file__).resolve().parents[1]
-V11=ROOT/"Current best submission v11"
+V11=ROOT/"final_submissions_and_artifacts"
 X=pd.read_csv(V11/"final_dataset.csv.gz",compression="gzip")
 tr=pd.read_csv(ROOT/"working"/"train.csv"); te=pd.read_csv(ROOT/"working"/"test.csv")
 sample=pd.read_csv(ROOT/"working"/"sample_submission.csv")

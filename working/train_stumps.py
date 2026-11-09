@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 
-ROOT=Path(__file__).resolve().parents[1]; V=ROOT/"Current best submission v11"; D=ROOT/"working"
+ROOT=Path(__file__).resolve().parents[1]; V=ROOT/"final_submissions_and_artifacts"; D=ROOT/"working"
 X=pd.read_csv(V/"final_dataset.csv.gz",compression="gzip")
 tr=pd.read_csv(D/"train.csv"); te=pd.read_csv(D/"test.csv"); ss=pd.read_csv(D/"sample_submission.csv")
 T=tr.merge(X,on="encounter_id",how="left",validate="one_to_one"); S=te.merge(X,on="encounter_id",how="left",validate="one_to_one")

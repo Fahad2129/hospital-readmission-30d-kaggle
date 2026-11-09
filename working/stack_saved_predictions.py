@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 
-ROOT=Path(__file__).resolve().parents[1]; V=ROOT/"Current best submission v11"; D=ROOT/"working"
+ROOT=Path(__file__).resolve().parents[1]; V=ROOT/"final_submissions_and_artifacts"; D=ROOT/"working"
 tr=pd.read_csv(D/"train.csv"); te=pd.read_csv(D/"test.csv"); ss=pd.read_csv(D/"sample_submission.csv")
 # final_oof.npy follows the encounter order in features2.parquet, so align by ID.
 ids=pd.read_parquet(D/"features2.parquet",columns=["encounter_id"])

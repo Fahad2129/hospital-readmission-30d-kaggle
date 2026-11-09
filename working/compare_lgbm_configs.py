@@ -9,7 +9,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 
-ROOT=Path(__file__).resolve().parents[1]; V11=ROOT/"Current best submission v11"; DATA=ROOT/"working"
+ROOT=Path(__file__).resolve().parents[1]; V11=ROOT/"final_submissions_and_artifacts"; DATA=ROOT/"working"
 X=pd.read_csv(V11/"final_dataset.csv.gz",compression="gzip")
 tr=pd.read_csv(DATA/"train.csv"); te=pd.read_csv(DATA/"test.csv"); ss=pd.read_csv(DATA/"sample_submission.csv")
 cat=[c for c in X if not pd.api.types.is_numeric_dtype(X[c]) and c!="encounter_id"]

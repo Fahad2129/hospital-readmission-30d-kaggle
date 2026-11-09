@@ -13,7 +13,7 @@ from scipy.stats import rankdata
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "working"
-FINAL = ROOT / "Current best submission v11"
+FINAL = ROOT / "final_submissions_and_artifacts"
 
 
 def ranks(values):

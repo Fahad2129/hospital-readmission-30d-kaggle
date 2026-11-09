@@ -23,7 +23,7 @@ work/
 outputs/
 run_log.txt
 submission.csv
-Current best submission v11/final_dataset.csv.gz
+final_submissions_and_artifacts/final_dataset.csv.gz
 
 # Keep canonical raw CSV data and final submission CSVs under version control.
 # Do not place credentials or private data in this repository.

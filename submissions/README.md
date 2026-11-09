@@ -1,6 +1,6 @@
 # Final submission artifacts
 
-The canonical CSVs are kept in [`../Current best submission v11/`](../Current%20best%20submission%20v11/), alongside the saved out-of-fold and test prediction arrays used during blending.
+The canonical CSVs are kept in [`../final_submissions_and_artifacts/`](../final_submissions_and_artifacts/), alongside the saved out-of-fold and test prediction arrays used during blending.
 
 | File | Private ROC-AUC | Public ROC-AUC | Status |
 | --- | ---: | ---: | --- |
