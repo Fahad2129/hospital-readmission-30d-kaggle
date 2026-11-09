@@ -20,6 +20,7 @@ The three files are in [`final_submissions_and_artifacts/`](final_submissions_an
 | --- | --- |
 | [`working/`](working/) | Raw competition CSV tables, thirteen ordered notebooks, utility scripts, and the project data dictionary. |
 | [`final_submissions_and_artifacts/`](final_submissions_and_artifacts/) | Final submission candidates, saved OOF/test predictions used by blends, feature-column appendix, and earlier pipeline scripts. |
+| [`final_pipeline.ipynb`](final_pipeline.ipynb) | Single submission-ready notebook that runs raw feature generation, component training, rank blending, and Kaggle-schema validation. |
 | [`data/README.md`](data/README.md) | Raw-data inventory and expected file names. |
 | [`submissions/README.md`](submissions/README.md) | Final-submission inventory and verification notes. |
 
@@ -54,7 +55,7 @@ The notebooks deliberately use out-of-fold predictions for blend/stack model sel
 
 - The repository contains course-competition data only.  Do not add patient-identifying data, credentials, or any non-competition data.
 - `final_columns.csv` is included as the report appendix describing the modeling columns and their source tables.
-- Generated caches, model binaries, notebook checkpoints, and large intermediate feature matrices are excluded through `.gitignore`; they can be regenerated from the raw tables and notebooks.
+- Generated caches, model binaries, notebook checkpoints, and large intermediate feature matrices are excluded through `.gitignore`. The final notebook rebuilds the historical shallow-stump feature table locally from raw CSVs rather than publishing a derived encounter-level table.
 - Runtime is approximately 4–5 hours for the full notebook sequence and requires roughly 7 GB RAM, according to the project run notes.
 
 ## Report handoff checklist

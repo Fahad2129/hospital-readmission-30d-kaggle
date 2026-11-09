@@ -1,5 +1,6 @@
 """Train a diverse shallow LightGBM model for OOF blend evaluation."""
 from pathlib import Path
+import os
 import warnings
 warnings.filterwarnings("ignore")
 import lightgbm as lgb
@@ -9,7 +10,8 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 
 ROOT=Path(__file__).resolve().parents[1]; V=ROOT/"final_submissions_and_artifacts"; D=ROOT/"working"
-X=pd.read_csv(V/"final_dataset.csv.gz",compression="gzip")
+feature_path=Path(os.environ.get("LEGACY_STUMP_FEATURES", V/"final_dataset.csv.gz"))
+X=pd.read_csv(feature_path,compression="gzip")
 tr=pd.read_csv(D/"train.csv"); te=pd.read_csv(D/"test.csv"); ss=pd.read_csv(D/"sample_submission.csv")
 T=tr.merge(X,on="encounter_id",how="left",validate="one_to_one"); S=te.merge(X,on="encounter_id",how="left",validate="one_to_one")
 y=T.readmit_30d.to_numpy(); cat=[c for c in X if not pd.api.types.is_numeric_dtype(X[c]) and c not in ["encounter_id","attending_id"]]

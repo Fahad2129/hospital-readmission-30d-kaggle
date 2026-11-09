@@ -23,7 +23,10 @@ work/
 outputs/
 run_log.txt
 submission.csv
+reproducibility_runs/
 final_submissions_and_artifacts/final_dataset.csv.gz
+final_submissions_and_artifacts/stump_submission.csv
+final_submissions_and_artifacts/enriched_gam_submission.csv
 
 # Keep canonical raw CSV data and final submission CSVs under version control.
 # Do not place credentials or private data in this repository.

@@ -17,3 +17,5 @@ encounter_id,readmit_30d
 `readmit_30d` contains probabilities, not hard 0/1 predictions.  `submission_v18_oof_stack.csv` is retained as an additional experiment; despite its marginally higher displayed private score (0.75740), it was not among the three selected final submissions.
 
 The documented v19 reproduction code is [`../working/create_v19_rank_blend.py`](../working/create_v19_rank_blend.py).  Its component-model scripts save `stump_submission.csv` and `enriched_gam_submission.csv` beside these final artifacts before the rank blend is created.
+
+For the grader-facing end-to-end path, run [`../final_pipeline.ipynb`](../final_pipeline.ipynb). It writes its regenerated submission to `reproducibility_runs/` rather than replacing any canonical submission artifact.

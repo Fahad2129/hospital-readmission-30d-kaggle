@@ -1,8 +1,10 @@
 """Raw tables -> one row per encounter_id (train + test). Saves features.parquet"""
+from pathlib import Path
 import pandas as pd, numpy as np, warnings, re
 warnings.filterwarnings('ignore')
-D = '/mnt/user-data/uploads'
-OUT = '/home/claude/work'
+ROOT = Path(__file__).resolve().parents[1]
+D = ROOT / 'working'
+OUT = ROOT / 'reproducibility_runs' / 'legacy_features'
 import os; os.makedirs(OUT, exist_ok=True)
 
 tr = pd.read_csv(f'{D}/train.csv'); te = pd.read_csv(f'{D}/test.csv')
