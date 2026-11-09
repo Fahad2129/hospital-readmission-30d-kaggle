@@ -1,0 +1,542 @@
+column,source_table,creation
+encounter_id,index_encounters,join key
+hospital_id,hospitals,joined by hospital_id
+admission_type,index_encounters,encounter field or derived date/admission feature
+admission_source,index_encounters,encounter field or derived date/admission feature
+service_line,index_encounters,encounter field or derived date/admission feature
+discharge_disposition,index_encounters,encounter field or derived date/admission feature
+attending_specialty,index_encounters,encounter field or derived date/admission feature
+admit_weight_kg,index_encounters,encounter field or derived date/admission feature
+los_days,index_encounters,encounter field or derived date/admission feature
+admit_hour,index_encounters,encounter field or derived date/admission feature
+admit_dow,index_encounters,encounter field or derived date/admission feature
+admit_month,index_encounters,encounter field or derived date/admission feature
+admit_year,index_encounters,encounter field or derived date/admission feature
+dc_hour,index_encounters,encounter field or derived date/admission feature
+dc_dow,index_encounters,encounter field or derived date/admission feature
+dc_weekend,index_encounters,encounter field or derived date/admission feature
+admit_t,index_encounters,encounter field or derived date/admission feature
+weight_missing,index_encounters,encounter field or derived date/admission feature
+spec_missing,index_encounters,encounter field or derived date/admission feature
+attending_n,index_encounters,encounter field or derived date/admission feature
+hospital_n,index_encounters,encounter field or derived date/admission feature
+sex,patients,cleaned patient fields joined by patient_id
+race_ethnicity,patients,cleaned patient fields joined by patient_id
+language,patients,cleaned patient fields joined by patient_id
+marital_status,patients,cleaned patient fields joined by patient_id
+insurance_type,patients,cleaned patient fields joined by patient_id
+deprivation_index,patients,cleaned patient fields joined by patient_id
+bed_size,hospitals,joined by hospital_id
+teaching_flag,hospitals,joined by hospital_id
+urban_rural,hospitals,joined by hospital_id
+ownership,hospitals,joined by hospital_id
+age,patients,cleaned patient fields joined by patient_id
+zip3_num,patients,cleaned patient fields joined by patient_id
+bmi_proxy_missing,patients,cleaned patient fields joined by patient_id
+ins_missing,patients,cleaned patient fields joined by patient_id
+n_dx,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_dx_unique,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_chronic,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_poa_N,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_poa_missing,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_poa_UW,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+prim_code,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+prim_chapter,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+prim_chronic,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Blood/Neoplasms,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Circulatory,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Digestive,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Endocrine/metabolic,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_External causes,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Genitourinary,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Health status/services,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Infectious diseases,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Injury,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Mental/behavioral,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Musculoskeletal,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Neoplasms,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Nervous system,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Respiratory,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Skin,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+ch_Symptoms/signs,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_A41_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C18_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C25_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C34_90,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C50_919,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C79_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_C80_1,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_D64_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E03_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E11_10,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E11_22,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E11_65,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E11_69,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E11_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E66_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E78_5,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E86_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E87_1,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_E87_6,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_F03_90,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_F17_210,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_F32_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_G40_909,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_G45_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_G47_33,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_G89_29,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_G93_40,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I10,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I11_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I21_3,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I21_4,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I21_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I25_10,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I47_1,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I48_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I48_20,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I48_91,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I50_22,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I50_23,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I50_32,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I50_33,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I50_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_I63_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J13,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J15_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J18_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J44_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J44_1,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J44_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_J45_909,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K21_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K35_80,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K56_609,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K57_32,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K59_00,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K80_00,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K85_90,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_K92_2,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_L03_115,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_L89_90,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_M10_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_M16_11,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_M17_11,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_N17_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_N18_30,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_N18_4,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_N18_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_N39_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R06_02,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R07_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R10_9,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R41_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R42,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_R55,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_S72_001A,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_W19_XXXA,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z72_0,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z79_01,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z79_4,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z79_899,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z86_73,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+dx_Z91_19,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_hf,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_ami,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_afib,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_stroke,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_copd,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_pna,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_dm,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_ckd,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_cancer,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_mets,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_dementia,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_psych,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_sym,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_fluid,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_noncompl,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_pressure_ulcer,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+f_tobacco,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+charlson_like,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+n_proc,index_encounters,encounter field or derived date/admission feature
+proc_first_day,index_encounters,encounter field or derived date/admission feature
+proc_last_day,index_encounters,encounter field or derived date/admission feature
+proc_code,index_encounters,encounter field or derived date/admission feature
+proc_19303,index_encounters,encounter field or derived date/admission feature
+proc_27130,index_encounters,encounter field or derived date/admission feature
+proc_27236,index_encounters,encounter field or derived date/admission feature
+proc_27447,index_encounters,encounter field or derived date/admission feature
+proc_36556,index_encounters,encounter field or derived date/admission feature
+proc_43239,index_encounters,encounter field or derived date/admission feature
+proc_44120,index_encounters,encounter field or derived date/admission feature
+proc_44140,index_encounters,encounter field or derived date/admission feature
+proc_44970,index_encounters,encounter field or derived date/admission feature
+proc_45378,index_encounters,encounter field or derived date/admission feature
+proc_47562,index_encounters,encounter field or derived date/admission feature
+proc_92928,index_encounters,encounter field or derived date/admission feature
+proc_92960,index_encounters,encounter field or derived date/admission feature
+proc_93458,index_encounters,encounter field or derived date/admission feature
+lab_albumin_first,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_first,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_first,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_first,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_first,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_first,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_first,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_first,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_first,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_first,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_first,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_first,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_first,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_last,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_last,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_last,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_last,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_last,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_last,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_last,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_last,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_last,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_last,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_last,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_last,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_last,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_min,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_min,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_min,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_min,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_min,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_min,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_min,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_min,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_min,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_min,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_min,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_min,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_min,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_max,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_max,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_max,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_max,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_max,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_max,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_max,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_max,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_max,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_max,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_max,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_max,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_max,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_mean,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_n,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_n,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_n,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_n,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_n,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_n,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_n,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_n,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_n,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_n,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_n,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_n,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_n,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_delta,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_h_last,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_hfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_albumin_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_bnp_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_bun_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_creatinine_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_glucose_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_hba1c_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_hemoglobin_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_inr_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_lactate_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_potassium_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_sodium_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_troponin_i_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_wbc_lfrac,lab_results,cleaned and aggregated by encounter and lab
+lab_total_n,lab_results,cleaned and aggregated by encounter and lab
+lab_n_types,lab_results,cleaned and aggregated by encounter and lab
+lab_flag_H_n,lab_results,cleaned and aggregated by encounter and lab
+lab_flag_L_n,lab_results,cleaned and aggregated by encounter and lab
+vit_DBP_first,vitals,temperature normalized; encounter-level summary
+vit_HR_first,vitals,temperature normalized; encounter-level summary
+vit_RR_first,vitals,temperature normalized; encounter-level summary
+vit_SBP_first,vitals,temperature normalized; encounter-level summary
+vit_SPO2_first,vitals,temperature normalized; encounter-level summary
+vit_TEMP_first,vitals,temperature normalized; encounter-level summary
+vit_DBP_last,vitals,temperature normalized; encounter-level summary
+vit_HR_last,vitals,temperature normalized; encounter-level summary
+vit_RR_last,vitals,temperature normalized; encounter-level summary
+vit_SBP_last,vitals,temperature normalized; encounter-level summary
+vit_SPO2_last,vitals,temperature normalized; encounter-level summary
+vit_TEMP_last,vitals,temperature normalized; encounter-level summary
+vit_DBP_min,vitals,temperature normalized; encounter-level summary
+vit_HR_min,vitals,temperature normalized; encounter-level summary
+vit_RR_min,vitals,temperature normalized; encounter-level summary
+vit_SBP_min,vitals,temperature normalized; encounter-level summary
+vit_SPO2_min,vitals,temperature normalized; encounter-level summary
+vit_TEMP_min,vitals,temperature normalized; encounter-level summary
+vit_DBP_max,vitals,temperature normalized; encounter-level summary
+vit_HR_max,vitals,temperature normalized; encounter-level summary
+vit_RR_max,vitals,temperature normalized; encounter-level summary
+vit_SBP_max,vitals,temperature normalized; encounter-level summary
+vit_SPO2_max,vitals,temperature normalized; encounter-level summary
+vit_TEMP_max,vitals,temperature normalized; encounter-level summary
+vit_DBP_mean,vitals,temperature normalized; encounter-level summary
+vit_HR_mean,vitals,temperature normalized; encounter-level summary
+vit_RR_mean,vitals,temperature normalized; encounter-level summary
+vit_SBP_mean,vitals,temperature normalized; encounter-level summary
+vit_SPO2_mean,vitals,temperature normalized; encounter-level summary
+vit_TEMP_mean,vitals,temperature normalized; encounter-level summary
+vit_DBP_std,vitals,temperature normalized; encounter-level summary
+vit_HR_std,vitals,temperature normalized; encounter-level summary
+vit_RR_std,vitals,temperature normalized; encounter-level summary
+vit_SBP_std,vitals,temperature normalized; encounter-level summary
+vit_SPO2_std,vitals,temperature normalized; encounter-level summary
+vit_TEMP_std,vitals,temperature normalized; encounter-level summary
+vit_DBP_delta,vitals,temperature normalized; encounter-level summary
+vit_HR_delta,vitals,temperature normalized; encounter-level summary
+vit_RR_delta,vitals,temperature normalized; encounter-level summary
+vit_SBP_delta,vitals,temperature normalized; encounter-level summary
+vit_SPO2_delta,vitals,temperature normalized; encounter-level summary
+vit_TEMP_delta,vitals,temperature normalized; encounter-level summary
+vit_DBP_last24,vitals,temperature normalized; encounter-level summary
+vit_HR_last24,vitals,temperature normalized; encounter-level summary
+vit_RR_last24,vitals,temperature normalized; encounter-level summary
+vit_SBP_last24,vitals,temperature normalized; encounter-level summary
+vit_SPO2_last24,vitals,temperature normalized; encounter-level summary
+vit_TEMP_last24,vitals,temperature normalized; encounter-level summary
+vit_DBP_last48,vitals,temperature normalized; encounter-level summary
+vit_HR_last48,vitals,temperature normalized; encounter-level summary
+vit_RR_last48,vitals,temperature normalized; encounter-level summary
+vit_SBP_last48,vitals,temperature normalized; encounter-level summary
+vit_SPO2_last48,vitals,temperature normalized; encounter-level summary
+vit_TEMP_last48,vitals,temperature normalized; encounter-level summary
+vit_HR_abn_frac,vitals,temperature normalized; encounter-level summary
+vit_HR_abn_last24,vitals,temperature normalized; encounter-level summary
+vit_SBP_abn_frac,vitals,temperature normalized; encounter-level summary
+vit_SBP_abn_last24,vitals,temperature normalized; encounter-level summary
+vit_SPO2_abn_frac,vitals,temperature normalized; encounter-level summary
+vit_SPO2_abn_last24,vitals,temperature normalized; encounter-level summary
+vit_RR_abn_frac,vitals,temperature normalized; encounter-level summary
+vit_RR_abn_last24,vitals,temperature normalized; encounter-level summary
+vit_TEMP_abn_frac,vitals,temperature normalized; encounter-level summary
+vit_TEMP_abn_last24,vitals,temperature normalized; encounter-level summary
+vit_shock_idx_last,vitals,temperature normalized; encounter-level summary
+vit_pulse_pressure_last,vitals,temperature normalized; encounter-level summary
+vit_n,vitals,temperature normalized; encounter-level summary
+n_med,medications,normalized drug text; encounter-level aggregation
+n_med_unique,medications,normalized drug text; encounter-level aggregation
+n_med_classes,medications,normalized drug text; encounter-level aggregation
+med_cont_sum,medications,normalized drug text; encounter-level aggregation
+med_cont_frac,medications,normalized drug text; encounter-level aggregation
+med_cont_missing,medications,normalized drug text; encounter-level aggregation
+med_stop_missing,medications,normalized drug text; encounter-level aggregation
+med_home_n,medications,normalized drug text; encounter-level aggregation
+med_dur_mean,medications,normalized drug text; encounter-level aggregation
+med_start_rel_mean,medications,normalized drug text; encounter-level aggregation
+med_n_IV,medications,normalized drug text; encounter-level aggregation
+med_n_SC,medications,normalized drug text; encounter-level aggregation
+med_not_cont_n,medications,normalized drug text; encounter-level aggregation
+mc_ACE_ARB,medications,normalized drug text; encounter-level aggregation
+mc_ANALGESIC,medications,normalized drug text; encounter-level aggregation
+mc_ANTIBIOTIC,medications,normalized drug text; encounter-level aggregation
+mc_ANTICOAGULANT,medications,normalized drug text; encounter-level aggregation
+mc_ANTIDIABETIC_ORAL,medications,normalized drug text; encounter-level aggregation
+mc_ANTIEMETIC,medications,normalized drug text; encounter-level aggregation
+mc_ANTIPLATELET,medications,normalized drug text; encounter-level aggregation
+mc_ANTIPSYCHOTIC,medications,normalized drug text; encounter-level aggregation
+mc_BENZODIAZEPINE,medications,normalized drug text; encounter-level aggregation
+mc_BETA_BLOCKER,medications,normalized drug text; encounter-level aggregation
+mc_BRONCHODILATOR,medications,normalized drug text; encounter-level aggregation
+mc_CCB,medications,normalized drug text; encounter-level aggregation
+mc_CORTICOSTEROID,medications,normalized drug text; encounter-level aggregation
+mc_ELECTROLYTE,medications,normalized drug text; encounter-level aggregation
+mc_INSULIN,medications,normalized drug text; encounter-level aggregation
+mc_LOOP_DIURETIC,medications,normalized drug text; encounter-level aggregation
+mc_OPIOID,medications,normalized drug text; encounter-level aggregation
+mc_PPI,medications,normalized drug text; encounter-level aggregation
+mc_SSRI,medications,normalized drug text; encounter-level aggregation
+mc_STATIN,medications,normalized drug text; encounter-level aggregation
+mc_SUPPLEMENT,medications,normalized drug text; encounter-level aggregation
+mc_THYROID,medications,normalized drug text; encounter-level aggregation
+mcont_ACE_ARB,medications,normalized drug text; encounter-level aggregation
+mcont_ANALGESIC,medications,normalized drug text; encounter-level aggregation
+mcont_ANTIBIOTIC,medications,normalized drug text; encounter-level aggregation
+mcont_ANTICOAGULANT,medications,normalized drug text; encounter-level aggregation
+mcont_ANTIDIABETIC_ORAL,medications,normalized drug text; encounter-level aggregation
+mcont_ANTIEMETIC,medications,normalized drug text; encounter-level aggregation
+mcont_ANTIPLATELET,medications,normalized drug text; encounter-level aggregation
+mcont_ANTIPSYCHOTIC,medications,normalized drug text; encounter-level aggregation
+mcont_BENZODIAZEPINE,medications,normalized drug text; encounter-level aggregation
+mcont_BETA_BLOCKER,medications,normalized drug text; encounter-level aggregation
+mcont_BRONCHODILATOR,medications,normalized drug text; encounter-level aggregation
+mcont_CCB,medications,normalized drug text; encounter-level aggregation
+mcont_CORTICOSTEROID,medications,normalized drug text; encounter-level aggregation
+mcont_ELECTROLYTE,medications,normalized drug text; encounter-level aggregation
+mcont_INSULIN,medications,normalized drug text; encounter-level aggregation
+mcont_LOOP_DIURETIC,medications,normalized drug text; encounter-level aggregation
+mcont_OPIOID,medications,normalized drug text; encounter-level aggregation
+mcont_PPI,medications,normalized drug text; encounter-level aggregation
+mcont_SSRI,medications,normalized drug text; encounter-level aggregation
+mcont_STATIN,medications,normalized drug text; encounter-level aggregation
+mcont_SUPPLEMENT,medications,normalized drug text; encounter-level aggregation
+mcont_THYROID,medications,normalized drug text; encounter-level aggregation
+drug_acetaminophen,medications,normalized drug text; encounter-level aggregation
+drug_albuterol,medications,normalized drug text; encounter-level aggregation
+drug_amlodipine,medications,normalized drug text; encounter-level aggregation
+drug_apixaban,medications,normalized drug text; encounter-level aggregation
+drug_aspirin,medications,normalized drug text; encounter-level aggregation
+drug_atorvastatin,medications,normalized drug text; encounter-level aggregation
+drug_azithromycin,medications,normalized drug text; encounter-level aggregation
+drug_ceftriaxone,medications,normalized drug text; encounter-level aggregation
+drug_clopidogrel,medications,normalized drug text; encounter-level aggregation
+drug_enoxaparin,medications,normalized drug text; encounter-level aggregation
+drug_furosemide,medications,normalized drug text; encounter-level aggregation
+drug_glipizide,medications,normalized drug text; encounter-level aggregation
+drug_heparin,medications,normalized drug text; encounter-level aggregation
+drug_humalog,medications,normalized drug text; encounter-level aggregation
+drug_insulin glargine,medications,normalized drug text; encounter-level aggregation
+drug_insulin lispro,medications,normalized drug text; encounter-level aggregation
+drug_lantus,medications,normalized drug text; encounter-level aggregation
+drug_lasix,medications,normalized drug text; encounter-level aggregation
+drug_levothyroxine,medications,normalized drug text; encounter-level aggregation
+drug_lipitor,medications,normalized drug text; encounter-level aggregation
+drug_lisinopril,medications,normalized drug text; encounter-level aggregation
+drug_lopressor,medications,normalized drug text; encounter-level aggregation
+drug_lorazepam,medications,normalized drug text; encounter-level aggregation
+drug_losartan,medications,normalized drug text; encounter-level aggregation
+drug_metformin,medications,normalized drug text; encounter-level aggregation
+drug_methylprednisolone,medications,normalized drug text; encounter-level aggregation
+drug_metoprolol,medications,normalized drug text; encounter-level aggregation
+drug_morphine,medications,normalized drug text; encounter-level aggregation
+drug_multivitamin,medications,normalized drug text; encounter-level aggregation
+drug_norvasc,medications,normalized drug text; encounter-level aggregation
+drug_omeprazole,medications,normalized drug text; encounter-level aggregation
+drug_ondansetron,medications,normalized drug text; encounter-level aggregation
+drug_oxycodone,medications,normalized drug text; encounter-level aggregation
+drug_piperacillin tazobactam,medications,normalized drug text; encounter-level aggregation
+drug_potassium chloride,medications,normalized drug text; encounter-level aggregation
+drug_prednisone,medications,normalized drug text; encounter-level aggregation
+drug_prilosec,medications,normalized drug text; encounter-level aggregation
+drug_quetiapine,medications,normalized drug text; encounter-level aggregation
+drug_sertraline,medications,normalized drug text; encounter-level aggregation
+drug_tramadol,medications,normalized drug text; encounter-level aggregation
+drug_tylenol,medications,normalized drug text; encounter-level aggregation
+drug_vancomycin,medications,normalized drug text; encounter-level aggregation
+drug_warfarin,medications,normalized drug text; encounter-level aggregation
+drug_zestril,medications,normalized drug text; encounter-level aggregation
+hrs_ED,index_encounters,encounter field or derived date/admission feature
+hrs_ICU,index_encounters,encounter field or derived date/admission feature
+hrs_STEPDOWN,index_encounters,encounter field or derived date/admission feature
+hrs_WARD,index_encounters,encounter field or derived date/admission feature
+visits_ED,index_encounters,encounter field or derived date/admission feature
+visits_ICU,index_encounters,encounter field or derived date/admission feature
+visits_STEPDOWN,index_encounters,encounter field or derived date/admission feature
+visits_WARD,index_encounters,encounter field or derived date/admission feature
+n_transfers,index_encounters,encounter field or derived date/admission feature
+first_unit,index_encounters,encounter field or derived date/admission feature
+last_unit,index_encounters,encounter field or derived date/admission feature
+icu_first_rel_h,index_encounters,encounter field or derived date/admission feature
+icu_to_dc_h,index_encounters,encounter field or derived date/admission feature
+icu_any,index_encounters,encounter field or derived date/admission feature
+had_ed,index_encounters,encounter field or derived date/admission feature
+ward_after_icu_h,index_encounters,encounter field or derived date/admission feature
+pu_ED_30,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_90,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_180,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_365,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_730,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_last_days,prior_utilization,prior-to-admission visit counts and summaries
+pu_ED_samehosp,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_30,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_90,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_180,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_365,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_730,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_last_days,prior_utilization,prior-to-admission visit counts and summaries
+pu_IP_samehosp,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_30,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_90,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_180,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_365,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_730,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_last_days,prior_utilization,prior-to-admission visit counts and summaries
+pu_OP_samehosp,prior_utilization,prior-to-admission visit counts and summaries
+pu_total,prior_utilization,prior-to-admission visit counts and summaries
+pu_n_hosp,prior_utilization,prior-to-admission visit counts and summaries
+pu_any_days,prior_utilization,prior-to-admission visit counts and summaries
+pu_acute_365,prior_utilization,prior-to-admission visit counts and summaries
+pu_acute_180,prior_utilization,prior-to-admission visit counts and summaries
+pu_has_history,prior_utilization,prior-to-admission visit counts and summaries
+dp_followup_scheduled_days,discharge_planning,cleaned encounter-level fields
+dp_home_health_referral,discharge_planning,cleaned encounter-level fields
+dp_med_reconciliation_done,discharge_planning,cleaned encounter-level fields
+dp_education_done,discharge_planning,cleaned encounter-level fields
+dp_present,discharge_planning,cleaned encounter-level fields
+dp_followup_missing,discharge_planning,cleaned encounter-level fields
+no_meds,medications,normalized drug text; encounter-level aggregation
+no_labs,lab_results,cleaned and aggregated by encounter and lab
+dx_per_day,diagnoses + icd10_lookup,ICD normalized and aggregated by encounter
+meds_per_day,index_encounters,encounter field or derived date/admission feature
+labs_per_day,index_encounters,encounter field or derived date/admission feature
+egfr_first,index_encounters,encounter field or derived date/admission feature
+egfr_last,index_encounters,encounter field or derived date/admission feature
+egfr_max_cr,index_encounters,encounter field or derived date/admission feature
+bun_cr_ratio,index_encounters,encounter field or derived date/admission feature
+cr_ratio_last_first,index_encounters,encounter field or derived date/admission feature
+acute_adm,index_encounters,encounter field or derived date/admission feature
+lace,index_encounters,encounter field or derived date/admission feature

@@ -1,0 +1,29 @@
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Regenerable intermediate artifacts and trained models
+*.parquet
+*.npy
+*.pkl
+*.joblib
+*.model
+out/
+work/
+outputs/
+run_log.txt
+submission.csv
+Current best submission v11/final_dataset.csv.gz
+
+# Keep canonical raw CSV data and final submission CSVs under version control.
+# Do not place credentials or private data in this repository.
